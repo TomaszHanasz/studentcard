@@ -79,7 +79,7 @@ const createStudentCard = studentInfo.map((student, index) => {
   );
 });
 
-const StudentCard = () => {
+const StudentMenu = () => {
   const [showMenu, setShowMenu] = useState(false);
 
   return (
@@ -106,4 +106,4 @@ const StudentCard = () => {
   );
 };
 
-export default StudentCard;
+export default StudentMenu;

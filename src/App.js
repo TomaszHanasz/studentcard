@@ -1,9 +1,8 @@
-import StudentCard from "./components/studentCard/StudentCard";
+import StudentMenu from "./components/studentCard/StudentCard";
 import "./App.css";
 
 function App() {
-  return (
-  <StudentCard />)
+  return <StudentMenu />;
 }
 
 export default App;
