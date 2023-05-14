@@ -35,17 +35,25 @@ const createStudentCard = studentInfo.map((student, index) => {
 const StudentCard = () => {
   const [showMenu, setShowMenu] = useState(false);
 
-  const onMenuClick = () => {
-    setShowMenu(!showMenu);
-  };
-
   return (
     <>
       <div className="dropdown">
-        <button onClick={onMenuClick} className="menuBtn">
-          Show studentfff cards
+        <button
+          onMouseEnter={() => setShowMenu(true)}
+          onMouseLeave={() => setShowMenu(false)}
+          className="menuBtn"
+        >
+          Show student cards
         </button>
-        {showMenu && <div className="cards">{createStudentCard}</div>}
+        {showMenu && (
+          <div
+            onMouseEnter={() => setShowMenu(true)}
+            onMouseLeave={() => setShowMenu(false)}
+            className="cards"
+          >
+            {createStudentCard}
+          </div>
+        )}
       </div>
     </>
   );
