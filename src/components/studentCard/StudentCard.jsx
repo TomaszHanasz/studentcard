@@ -90,7 +90,7 @@ const StudentCard = () => {
           onMouseLeave={() => setShowMenu(false)}
           className="menuBtn"
         >
-          Students
+          Students ⛛
         </button>
         {showMenu && (
           <div
