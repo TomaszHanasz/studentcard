@@ -12,6 +12,10 @@
   -moz-box-shadow: 9px 7px 18px 0px rgba(0, 0, 0, 0.75);
 }
 
+.card-container:hover {
+  background-color: rgb(218, 192, 192);
+}
+
 .student-photo {
   margin: 30px 0;
   height: 100px;
