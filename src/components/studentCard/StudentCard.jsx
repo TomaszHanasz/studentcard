@@ -5,7 +5,7 @@ import "./studentCard.style.css";
 const studentInfo = [
   { src: photoImg, name: "tom", email: "a@th.com", lifeMotto: "Work hard" },
   { src: photoImg, name: "tom", email: "a@th.com", lifeMotto: "Work hard" },
-  { src: photoImg, name: "tom", email: "a@th.com", lifeMotto: "Work hard" },
+  { src: photoImg, name: "tomm", email: "a@th.com", lifeMotto: "Work hard" },
   { src: photoImg, name: "tom", email: "a@th.com", lifeMotto: "Work hard" },
   { src: photoImg, name: "tom", email: "a@th.com", lifeMotto: "Work hard" },
   { src: photoImg, name: "tom", email: "a@th.com", lifeMotto: "Work hard" },
