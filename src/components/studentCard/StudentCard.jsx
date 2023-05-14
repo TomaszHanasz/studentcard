@@ -1,5 +1,5 @@
 import photoImg from "../../assets/images/horse.jpg";
-import React from "react";
+import React, { useState } from "react";
 import "./studentCard.style.css";
 
 const studentInfo = [
@@ -33,7 +33,20 @@ const createStudentCard = studentInfo.map((student, index) => {
 });
 
 const StudentCard = () => {
-  return <div className="cards">{createStudentCard}</div>;
+  const [showMenu, setShowMenu] = useState(false);
+
+  const onMenuClick = () => {
+    setShowMenu(!showMenu);
+  };
+
+  return (
+    <>
+      <button onClick={onMenuClick} className="menuBtn">
+        Show student cards
+      </button>
+      {showMenu && <div className="cards">{createStudentCard}</div>}
+    </>
+  );
 };
 
 export default StudentCard;
