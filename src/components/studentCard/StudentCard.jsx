@@ -41,10 +41,12 @@ const StudentCard = () => {
 
   return (
     <>
-      <button onClick={onMenuClick} className="menuBtn">
-        Show student cards
-      </button>
-      {showMenu && <div className="cards">{createStudentCard}</div>}
+      <div className="dropdown">
+        <button onClick={onMenuClick} className="menuBtn">
+          Show studentfff cards
+        </button>
+        {showMenu && <div className="cards">{createStudentCard}</div>}
+      </div>
     </>
   );
 };
