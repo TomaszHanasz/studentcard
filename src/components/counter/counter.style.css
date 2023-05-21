@@ -1,0 +1,33 @@
+.counter {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: flex-end;
+    justify-content: center;
+   
+}
+
+.counter-container {
+    width: 500px;
+    height: 300px;
+    background-color: rgb(210, 195, 193);
+    margin: 50px auto;
+    border-radius: 10px;
+}
+
+.counter p {
+    font-size: 5rem;
+    padding: 0 30px;
+    margin-top: 50px;
+}
+
+.counter button {
+    width: 100px;
+    height: 45px; 
+    font-size: 1.5rem;
+}
+
+.warning {
+ text-align: center;
+ padding-top: 20px;
+}
