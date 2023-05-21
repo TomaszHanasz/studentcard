@@ -1,48 +1,83 @@
 .card-container {
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  flex-direction: row;
+  justify-content: flex-start;
   align-items: center;
-  width: 400px;
-  height: 500px;
-  background-color: red;
-  margin: 50px;
-  border-radius: 20px;
-  box-shadow: 9px 7px 18px 0px rgba(0,0,0,0.75);
--webkit-box-shadow: 9px 7px 18px 0px rgba(0,0,0,0.75);
--moz-box-shadow: 9px 7px 18px 0px rgba(0,0,0,0.75);
+  width: 325px;
+  height: 115px;
+  background-color: #587099;
+  border: 2px #8689ac solid;
+  box-shadow: 9px 7px 18px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 9px 7px 18px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 9px 7px 18px 0px rgba(0, 0, 0, 0.75);
+}
+
+.card-container:hover {
+  background-color: #8aa6d6;
+  cursor: pointer;
 }
 
 .student-photo {
-  margin-top: 50px;
-  height: 200px;
-  width: 200px;
+  margin: 30px 5px;
+  height: 75px;
+  width: 75px;
+  border: 1px solid #8689ac;
   border-radius: 100px;
   object-fit: cover;
 }
 
 .student-facts {
-    color: white;
-    font-size: 1.5rem;
-    line-height: 2.5rem;
+  color: white;
+  font-size: 0.9rem;
+  line-height: 1.2rem;
+  max-width: 225px;
 }
 
 ul {
   list-style: none;
+  padding: 20px 0 20px 0;
 }
 
 .more-info {
   width: 100px;
-  height: 40px;
-  margin-bottom: 50px;
+  height: 30px;
+  margin-bottom: 30px;
   border-radius: 10px;
-  box-shadow: 9px 7px 18px -8px rgba(0,0,0,0.75);
--webkit-box-shadow: 9px 7px 18px -8px rgba(0,0,0,0.75);
--moz-box-shadow: 9px 7px 18px -8px rgba(0,0,0,0.75);
+  box-shadow: 9px 7px 18px -8px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 9px 7px 18px -8px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 9px 7px 18px -8px rgba(0, 0, 0, 0.75);
+}
+
+.menuBtn {
+  margin-bottom: 0;
+  background-color: #3f5576;
+  color: white;
+  border: none;
+  font-size: 1.2rem;
+  line-height: 2.2rem;
+  width: 325px;
+  height: 50px;
+  box-shadow: 9px 7px 18px -8px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 9px 7px 18px -8px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 9px 7px 18px -8px rgba(0, 0, 0, 0.75);
+}
+
+.menuBtn:hover {
+  background-color: #8aa6d6;
+  cursor: pointer;
 }
 
 .cards {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  padding: 0;
+}
+
+.dropdown {
+  display: block;
+  margin: 0 auto;
+  margin-top: 20px;
+  position: relative;
+  width: 325px;
 }
